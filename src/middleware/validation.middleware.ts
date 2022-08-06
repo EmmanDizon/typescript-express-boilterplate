@@ -17,8 +17,7 @@ export default function validationMiddleware(
 
     handleJoiErrors(
       (async () => {
-        const value = await schema.validateAsync(req.body, options);
-        req.body = value;
+        await schema.validateAsync(req.body, options);
         next();
       })(),
       res
