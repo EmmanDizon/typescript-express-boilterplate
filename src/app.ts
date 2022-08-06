@@ -1,7 +1,7 @@
 import express, { Application } from "express";
 import cors from "cors";
 import morgan from "morgan";
-import Controller from "@/utils/init-controller";
+import Controller from "./utils/init-controller";
 import handleErrorMiddleWare from "./middleware/errors";
 import database from "./config/database";
 import logger from "./config/logger";

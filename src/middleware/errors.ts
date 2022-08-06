@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import ErrorHandler from "@/utils/error-handler";
+import ErrorHandler from "../utils/error-handler";
 
 export default function errorMiddleWare(
   error: ErrorHandler,

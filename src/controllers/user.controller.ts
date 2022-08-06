@@ -1,6 +1,6 @@
 import { Router, Request, Response, NextFunction } from "express";
-import Controller from "@/utils/init-controller";
-import ErrorHandler from "@/utils/error-handler";
+import Controller from "../utils/init-controller";
+import ErrorHandler from "../utils/error-handler";
 import validateMiddleWare from "../middleware/validation.middleware";
 import validate from "../common/validations/user.validation";
 import UserService from "../services/users/index";
